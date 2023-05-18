@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{%block content%}
+<!-- Banner -->
+<section id="banner">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <p class="title">Traffic violation Detector</p>
+    <p>"Stay Safe and Secure: Our Traffic violation detection system Is Your Guardian Angel on the Road".</p> 
+    <p>This Traffic violation detection system is a technology designed to enhance road safety by detecting and identifying riders who violate helmet laws. The system uses computer vision and machine learning algorithms to analyse images and identify motorcyclists who are not wearing helmets while riding on the roads.The helmet detection system for traffic violations helps reduce accidents and promote safer riding habits by enforcing helmet laws and regulations.</p>
+    <a href="{{url_for('register')}}"><button type="button" class="btn btn-primary" href="{{url_for('register')}}">Login</button></a>
+    </div>
+    <div class="col-md-6 text-center">
+    <img src="/static/images/main.png" class="img-fluid">
+    </div>
+    </div>
+    </div>
+      <img src="static/images/wave1.png" class="bottom-img">
+    </section>
+
+    <!--features-->
+    <section id="features">
+    <div class="container text-center">
+    <h1 class="title2">WHAT WE PROVIDE?</h1>
+    <div class="row text-center">
+    <div class="col-md-3 features">
+    <img src="static/images/serv1.png" class="serv-img">
+    <h4>
+      Camera feed review
+    </h4>
+    <p>Camera feed review of traffic violations involves analyzing video footage captured by surveillance cameras installed on roads and highways to identify and record instances of traffic violations</p>
+    </div>
+    <div class="col-md-4 features">
+    <img src="static/images/db.png" class="serv-img">
+    <h4>
+      Database
+    </h4>
+    <p>Data is stored in the form of images taken from our model.</p>
+    </div>
+    <div class="col-md-3 features">
+    <img src="static/images/img.png" class="serv-img">
+    <h4>
+      Image rechecking
+    </h4>
+    <p>By manually rechecking the images stored in the database, you can determine whether or not our model is providing accurate results. So the false positives are now over.</p>
+    </div>
+    </div>
+    <a href="{{url_for('register')}}"><button type="button" class="btn btn-primary" href="{{url_for('register')}}">Login</button></a>
+    </div>
+    </section>
+{%endblock%}

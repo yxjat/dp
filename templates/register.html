@@ -1,0 +1,56 @@
+{% extends "layout.html"%}
+{% block content%}
+<body class = 'init'>
+    <div class="wrapper init">
+       <div class="title-text">
+          <div class="title login">
+             Login
+          </div>
+       </div>
+       <div class="form-container">
+          <div class="form-inner">
+             <form class="login" method = 'POST'>
+               {{form.hidden_tag()}}
+                <div class="field">
+                  <!--{{form.email.label(class = 'field')}}-->
+                  {{form.email(class = 'field', placeholder = 'Username')}}
+                  <!-- {% if form.email.errors %}
+                      {{form.email(class = 'is-invalid')}}
+                      <div class="invalid-feedback">
+                          {% for error in form.email.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{form.email(class = "field", placeholder = 'Username')}}
+                  {% endif %} -->
+                </div>
+                <div class="field">
+                   {{form.password(class = 'field', placeholder = 'Password')}}
+                   <!-- {% if form.password.errors %}
+                      {{form.password(class = 'is-invalid')}}
+                      <div class="invalid-feedback">
+                          {% for error in form.password.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{form.password(class = "field", placeholder = 'Password')}}
+                  {% endif %} -->
+                </div>
+                <!-- <div class="pass-link">
+                   <a href="#">Forgot password?</a>
+                </div> -->
+                <div class="field btn-layer">
+                  {{form.submit(class = 'field btn btn-layer')}}
+                   <!-- <input type="submit" value="Login"> -->
+                </div>
+                <div class="signup-link">
+                   Not a member? <a href="">Signup now</a>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+
+{%endblock%}
